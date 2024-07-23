@@ -1,0 +1,8 @@
+  CREATE TABLE `department` (
+  	`department_id` BIGINT NOT NULL AUTO_INCREMENT,
+  	`name` VARCHAR(255) NOT NULL,
+  	`description` TEXT,
+  	`created_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  	`updated_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  	PRIMARY KEY(`department_id`)
+  );

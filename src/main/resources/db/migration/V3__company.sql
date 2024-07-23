@@ -1,0 +1,21 @@
+ CREATE TABLE `company` (
+ 	`company_id` BIGINT NOT NULL AUTO_INCREMENT,
+ 	`name` VARCHAR(1024) NOT NULL,
+ 	`profile_image_url`	VARCHAR(2048) NULL,
+ 	`website` VARCHAR(2048) NULL,
+ 	`location` VARCHAR(2048) NULL,
+ 	`about` TEXT NULL,
+ 	`founded_date` DATE,
+ 	`industry_types` VARCHAR(2048) NULL,
+ 	`company_size` BIGINT NULL,
+ 	`domains` VARCHAR(2048) NULL,
+ 	`founder_name` VARCHAR(2048) NULL,
+ 	`facebook_link` VARCHAR(2048) NULL,
+ 	`twitter_link` VARCHAR(2048) NULL,
+ 	`linkedin_link` VARCHAR(2048) NULL,
+ 	`products_services` VARCHAR(2048) NULL,
+ 	`headquarters` VARCHAR(2048) NULL,
+    `created_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  	`updated_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ 	 PRIMARY KEY(`company_id`)
+  );
